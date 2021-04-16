@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "778436044908",
+    "firebase_url": "https://yofun-834cc.firebaseio.com",
+    "project_id": "yofun-834cc",
+    "storage_bucket": "yofun-834cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778436044908:android:cc6053313160cde779d049",
+        "android_client_info": {
+          "package_name": "yodovn.com.yofunapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778436044908-igoo49etfgaef3j4aat5m1tmag5csji3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "yodovn.com.yofunapp",
+            "certificate_hash": "852e88c0d77c1ecb01add7851affcbbf470d47a3"
+          }
+        },
+        {
+          "client_id": "778436044908-jjk4h0imnhch4och70l3o5jk12ftkdbh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiVGwIMBsp1motfWB-z4SByYb4u1v9rW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778436044908-0fabsebjlhlaso1qp4epdtk9rg911265.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "778436044908-546uv331u1rdqnmvrkc7pvqqm24deki2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "yodovn.com.quizapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
