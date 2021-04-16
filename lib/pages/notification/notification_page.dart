@@ -26,6 +26,7 @@ class NotificationPage extends StatelessWidget {
                 title: 'Thông báo',
               ),
               CustomListView<NotificationModel>(
+                onRefresh: controller.refresh,
                 controller: controller.pagingController,
                 builder: (_, item, index) => ItemNotificationNormalWidget(item),
               ),

@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter_application_test/core/ui/base_controller.dart';
 import 'package:flutter_application_test/services/settings/user_device_token_service.dart';
 import 'package:get/get.dart';
@@ -39,19 +41,24 @@ class NotificationPageController extends BaseXController {
         userId: rootController.currentUserId,
         start: page,
         limit: this.limit,
+        useLocalApi: rootController.useLocalApi,
       );
+      print(result);
       List<NotificationModel> data = result.data
           .map(
             (dynamic e) => NotificationModel.fromJson(e),
           )
           .toList();
       final isLastPage = data.length < limit;
+
       if (isLastPage) {
         this.pagingController.appendLastPage(data);
       } else {
         final nextPageKey = page + data.length;
         pagingController.appendPage(data, nextPageKey);
       }
+    } on TimeoutException {
+      pagingController.error = "Timeout";
     } catch (e) {
       print('failed?');
       pagingController.error = "Đã xảy ra lỗi. Gọi Được";

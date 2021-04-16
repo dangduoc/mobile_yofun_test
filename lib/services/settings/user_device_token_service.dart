@@ -216,9 +216,8 @@ class UserDeviceTokenService implements IUserDeviceTokenService {
     final http.Response response = await _client.get(
       Uri.parse(_url),
       headers: {'content-type': 'application/json'},
-    );
-    print(response.statusCode);
-    print(response.body);
+    ).timeout(Duration(seconds: 3));
+
     if (response.statusCode != 200) throw Exception();
     var responseJson = json.decode(response.body.toString());
     return ApiPagedResponseWrapper.fromJson(responseJson);

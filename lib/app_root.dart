@@ -114,6 +114,9 @@ class AppRootController extends GetxController {
   int get currentTab => this._currentTab.value;
   Rx<int> _currentUserId = Rx<int>(1);
   int get currentUserId => _currentUserId.value;
+
+  Rx<bool> _useLocalApi = Rx<bool>(false);
+  bool get useLocalApi => _useLocalApi.value;
   void onSelectTab(int index) {
     this._currentTab.value = index;
   }
@@ -124,4 +127,6 @@ class AppRootController extends GetxController {
   }
 
   void setUserId(int userId) => this._currentUserId.value = userId;
+
+  void setUseLocalApi(bool value) => this._useLocalApi.value = value;
 }

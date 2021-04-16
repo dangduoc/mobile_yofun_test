@@ -42,14 +42,17 @@ class ItemNotificationNormalWidget extends StatelessWidget {
                       TextSpan(
                         text: item.actor,
                         style: TextStyle(
-                            fontSize: 14,
-                            color: Palette.neutral_800,
-                            fontWeight: FontWeight.bold),
+                          fontSize: 14,
+                          color: Palette.neutral_800,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                       TextSpan(
                         text: item.message,
-                        style:
-                            TextStyle(fontSize: 14, color: Palette.neutral_800),
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Palette.neutral_800,
+                        ),
                       ),
                     ],
                   ),

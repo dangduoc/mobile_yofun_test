@@ -20,6 +20,7 @@ class SettingController extends GetxController {
   Rx<int> userId = Rx<int>(1);
   void switchEnable(bool value) {
     this._isUseLocalApi.value = value;
+    this.rootController.setUseLocalApi(value);
     SnackBarService.showSuccess(
         "Đổi sang dùng: ${value ? "Local Api" : "Remote Api"}");
   }
